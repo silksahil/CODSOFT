@@ -1,0 +1,357 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+  /* outline: 1px solid #ff000044; */
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* .container-fluid, .row, .col-md-12, .col-md-4, .col-md-5, .col-md-7 {
+  padding: 0 !important;
+  margin: 0 !important;
+} */
+
+/* .navbar-brand, .nav-link, .searchBox, .menu, .mainFood, .ownerInfo {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+} */
+
+.navbar {
+  background-color: #333;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.searchBox {
+  position: relative;
+}
+
+.searchText {
+  width: 0;
+  margin: 0;
+}
+
+.searchbtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #555;
+  color: white;
+  border: none;
+}
+
+.statusBox {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin: 10px;
+}
+
+
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+:root {
+    --primary-color: #21243d;
+    --secondary-color: #ffd17e;
+    --background-height: 800px;
+  }
+.navstyle{
+    background-color: #21243d;
+}
+.logo{
+    height: 70px;
+    width: 80px;
+}
+.searchBox{
+    position: relative;
+    display: flex;
+    align-items: center;
+   
+}
+
+.searchText{
+    width: 0;
+    height: 60px;
+    border-radius: 20px;
+    transition: all 0.5 linear;
+    border: none;
+    outline: none;
+   
+}
+.searchbtn{
+    height: 60px;
+    width: 60px;
+    right: 1em;
+    position: absolute;
+    display: grid;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border-radius: 30px;
+    place-items: center;
+    overflow: hidden;
+    border: none;
+    outline: none;
+
+}
+@media (max-width: 991.98px) {
+    .searchBox {
+      margin-top: 10px;
+    }
+  }
+
+.searchBox:hover > .searchText{
+    width: 25em;
+    padding: 1em;
+   
+   
+}
+.searchBox:hover > .searchbtn{
+    background-color: white;
+    color: #21243d;
+    
+    
+}
+.home{
+    background: url(./imgs/hiomebg.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+
+} 
+.heading{
+    color: white;
+    padding: 6rem 0 0 .5em;
+    font-size: 5em;
+} 
+.para1{
+    color: #f5f5f59f;
+    padding:  1.8em 0 0 3em;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: cursive;
+}
+
+.homeBtn{
+    background-color: #21243d;
+    color: white;
+    width: 12em;
+    height: 2.5em;
+    border-radius: 30px;
+    margin: 2em 3em;
+   font-size: 1.3em;
+   letter-spacing: 1.5px;
+}
+.menu{
+    /* height: 830px; */
+    background-color: #21243d;
+}
+.menuHeading{
+color: white;
+text-align: center;
+font-size: 4em;
+font-weight: bold;
+padding-top: 1.5em;
+}
+
+.para2{
+color: white;
+text-align: center;
+font-size: 1.2em;
+justify-content: center;
+}
+.food{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 1.8em; */
+}
+.food1 , .food2 , .food3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foodImg{
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    margin-top: 3em;
+    margin-left: 2em;
+    align-items: center;
+    justify-content: center;
+
+}
+.menuTitle{
+    color: white;
+    text-align: center;
+    margin-top: .8em;
+    font-weight: bold;
+}
+.menuDescription{
+    color: white;
+    text-align: center;
+    margin-bottom: 3em;
+    font-size: 1.2em;
+}
+.mainFood{
+    background-color: #ffd17e;
+}
+.subHeading{
+    color: var(--primary-color); 
+    font-size: 3em;
+    margin-left: .6em;
+    margin-top: 2.5em;
+}
+.foodPic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .foodPic img{
+  height: 300px;
+  width: 300px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+  
+   
+ }
+ .para3{
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+    justify-content: center;
+ }
+ .statusBox{
+    width: 20em;
+    height: 20em;
+    border:  solid 5px white;
+    margin-bottom: 6em;
+    border-radius: 50%;
+    color: whitesmoke;
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+ .number{
+    font-size: 6em;
+    font-weight: bold;
+ }
+ .statusBox h4{
+    font-size: 2em;
+    font-weight: bold;
+ }
+ 
+ .ownerInfo{
+    background: url(./imgs/ownerbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+ }
+ .owner-img{
+  background-color:whitesmoke;
+ }
+ .highlight{
+    height: 850px;
+    background-color: var(--primary-color);
+    opacity: .92;
+    align-items: center;
+    justify-content: center;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+ }
+ .highlight img {
+    margin-bottom: 20px;
+    border-radius: 50%;
+
+  }
+  
+  .highlight p {
+    margin-bottom: 20px;
+    width: 70%; 
+    font-size: 2em;
+    justify-content: center;
+  }
+  .highlight h3{
+    font-weight: bold;
+    font-size: 3em;
+  }
+  .contact{
+    height: var(--background-height);
+    background-color: var(--secondary-color);
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   height: 650px;
+  }
+  .contact h2 {
+  margin-top: 2em;
+  letter-spacing: 3px;
+  }
+  .contact p{
+   margin: 0 10em;
+  }
+
+  .subscribe {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center; 
+   
+    
+  }
+  .inputText{
+    width: 45em;
+    height: 4em;
+    margin: 5em;
+    border-radius: 30px;
+    color: var(--primary-color);
+    /* padding-left: 2em; */
+
+  }
+  .bttn{
+    position: absolute;
+    height: 4em;
+    display: grid;
+    place-items: center;
+    right: 25em;
+    border-radius: 30px;
+    padding: 0 30px;
+    background-color: var(--primary-color);
+    color: white;
+  }
+  .footerBox{
+    background-color: #28282B ;
+    /* height: 450px ; */
+  }
+  .mainInfo{
+    color: white;
+    /* padding: 5em 0 0 5em; */
+    text-align: justify;
+  }
+  .otherDetails{
+    display: flex;
+    /* padding: 5em 0 0 5em; */
+    
+  }
+  .otherDetails ul{
+    list-style-type: none;
+   
+  }
+ 
+ 
